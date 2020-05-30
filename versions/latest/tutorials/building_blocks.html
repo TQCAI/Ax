@@ -267,11 +267,11 @@ function require(deps, fxn) {
 <div class="output_area">
 <div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Arm(parameters={'x1': 6.694524446502328, 'x2': 5.732972361147404})
-Arm(parameters={'x1': 7.9415674693882465, 'x2': 1.982960244640708})
-Arm(parameters={'x1': 3.5007730592042208, 'x2': 8.558063535019755})
-Arm(parameters={'x1': 4.021177608519793, 'x2': 0.20188367925584316})
-Arm(parameters={'x1': 9.536476926878095, 'x2': 9.257616801187396})
+<pre>Arm(parameters={'x1': 1.4431696198880672, 'x2': 4.434220576658845})
+Arm(parameters={'x1': 2.9415968246757984, 'x2': 7.867602966725826})
+Arm(parameters={'x1': 5.820558797568083, 'x2': 0.8674680162221193})
+Arm(parameters={'x1': 7.32707061804831, 'x2': 9.066838696599007})
+Arm(parameters={'x1': 3.9790541399270296, 'x2': 2.158275553956628})
 </pre>
 </div>
 </div>
@@ -310,7 +310,7 @@ Arm(parameters={'x1': 9.536476926878095, 'x2': 9.257616801187396})
   'transforms': typing.Union[typing.List[typing.Type[ax.modelbridge.transforms.base.Transform]], NoneType],
   'experiment': typing.Union[ax.core.experiment.Experiment, NoneType],
   'data': typing.Union[ax.core.data.Data, NoneType],
-  'transform_configs': typing.Union[typing.Dict[str, typing.Dict[str, typing.Union[int, float, str, botorch.acquisition.acquisition.AcquisitionFunction]]], NoneType],
+  'transform_configs': typing.Union[typing.Dict[str, typing.Dict[str, typing.Union[int, float, str, botorch.acquisition.acquisition.AcquisitionFunction, typing.Dict[str, typing.Any]]]], NoneType],
   'status_quo_name': typing.Union[str, NoneType],
   'status_quo_features': typing.Union[ax.core.observation.ObservationFeatures, NoneType],
   'optimization_config': typing.Union[ax.core.optimization_config.OptimizationConfig, NoneType],
@@ -510,11 +510,11 @@ Arm(parameters={'x1': 9.536476926878095, 'x2': 9.257616801187396})
 <div class="output_area">
 <div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Arm(name='0_0', parameters={'x1': 6.694524446502328, 'x2': 5.732972361147404})
-Arm(name='0_1', parameters={'x1': 7.9415674693882465, 'x2': 1.982960244640708})
-Arm(name='0_2', parameters={'x1': 3.5007730592042208, 'x2': 8.558063535019755})
-Arm(name='0_3', parameters={'x1': 4.021177608519793, 'x2': 0.20188367925584316})
-Arm(name='0_4', parameters={'x1': 9.536476926878095, 'x2': 9.257616801187396})
+<pre>Arm(name='0_0', parameters={'x1': 1.4431696198880672, 'x2': 4.434220576658845})
+Arm(name='0_1', parameters={'x1': 2.9415968246757984, 'x2': 7.867602966725826})
+Arm(name='0_2', parameters={'x1': 5.820558797568083, 'x2': 0.8674680162221193})
+Arm(name='0_3', parameters={'x1': 7.32707061804831, 'x2': 9.066838696599007})
+Arm(name='0_4', parameters={'x1': 3.9790541399270296, 'x2': 2.158275553956628})
 </pre>
 </div>
 </div>
@@ -662,7 +662,7 @@ Arm(name='0_4', parameters={'x1': 9.536476926878095, 'x2': 9.257616801187396})
 <th>0</th>
 <td>0_0</td>
 <td>booth</td>
-<td>323.987556</td>
+<td>16.351764</td>
 <td>0.0</td>
 <td>0</td>
 </tr>
@@ -670,7 +670,7 @@ Arm(name='0_4', parameters={'x1': 9.536476926878095, 'x2': 9.257616801187396})
 <th>1</th>
 <td>0_1</td>
 <td>booth</td>
-<td>189.619843</td>
+<td>212.924164</td>
 <td>0.0</td>
 <td>0</td>
 </tr>
@@ -678,7 +678,7 @@ Arm(name='0_4', parameters={'x1': 9.536476926878095, 'x2': 9.257616801187396})
 <th>2</th>
 <td>0_2</td>
 <td>booth</td>
-<td>296.925325</td>
+<td>56.687432</td>
 <td>0.0</td>
 <td>0</td>
 </tr>
@@ -686,7 +686,7 @@ Arm(name='0_4', parameters={'x1': 9.536476926878095, 'x2': 9.257616801187396})
 <th>3</th>
 <td>0_3</td>
 <td>booth</td>
-<td>17.155994</td>
+<td>691.274307</td>
 <td>0.0</td>
 <td>0</td>
 </tr>
@@ -694,7 +694,7 @@ Arm(name='0_4', parameters={'x1': 9.536476926878095, 'x2': 9.257616801187396})
 <th>4</th>
 <td>0_4</td>
 <td>booth</td>
-<td>987.490043</td>
+<td>27.855976</td>
 <td>0.0</td>
 <td>0</td>
 </tr>
@@ -737,7 +737,7 @@ Arm(name='0_4', parameters={'x1': 9.536476926878095, 'x2': 9.257616801187396})
 <div class="output_area">
 <div class="prompt"></div>
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>[WARNING 05-29 04:36:01] ModelBridge: Status quo control not present in data
+<pre>[WARNING 05-30 04:37:15] ModelBridge: Status quo control not present in data
 </pre>
 </div>
 </div>
@@ -766,11 +766,11 @@ Arm(name='0_4', parameters={'x1': 9.536476926878095, 'x2': 9.257616801187396})
 <div class="output_area">
 <div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Arm(name='2_0', parameters={'x1': 2.8360138203942364, 'x2': 3.059579847074467})
-Arm(name='2_1', parameters={'x1': 0.09712520318863384, 'x2': 1.628032469018219e-13})
-Arm(name='2_2', parameters={'x1': 5.797251474052373, 'x2': 4.199473497595483e-15})
-Arm(name='2_3', parameters={'x1': 2.595648398948538e-16, 'x2': 5.180768460330929})
-Arm(name='2_4', parameters={'x1': 4.792025636742253, 'x2': 2.4861463640237416})
+<pre>Arm(name='2_0', parameters={'x1': 0.8999394083037531, 'x2': 3.6318855735242597e-16})
+Arm(name='2_1', parameters={'x1': 0.0, 'x2': 6.736504269211583})
+Arm(name='2_2', parameters={'x1': 10.0, 'x2': 9.202681793854714e-16})
+Arm(name='2_3', parameters={'x1': 0.0, 'x2': 2.2675199980798255})
+Arm(name='2_4', parameters={'x1': 3.505715279667049, 'x2': 2.086207778218316e-15})
 </pre>
 </div>
 </div>
@@ -824,7 +824,7 @@ Arm(name='2_4', parameters={'x1': 4.792025636742253, 'x2': 2.4861463640237416})
 <th>0</th>
 <td>0_0</td>
 <td>booth</td>
-<td>323.987556</td>
+<td>16.351764</td>
 <td>0.0</td>
 <td>0</td>
 </tr>
@@ -832,7 +832,7 @@ Arm(name='2_4', parameters={'x1': 4.792025636742253, 'x2': 2.4861463640237416})
 <th>1</th>
 <td>0_1</td>
 <td>booth</td>
-<td>189.619843</td>
+<td>212.924164</td>
 <td>0.0</td>
 <td>0</td>
 </tr>
@@ -840,7 +840,7 @@ Arm(name='2_4', parameters={'x1': 4.792025636742253, 'x2': 2.4861463640237416})
 <th>2</th>
 <td>0_2</td>
 <td>booth</td>
-<td>296.925325</td>
+<td>56.687432</td>
 <td>0.0</td>
 <td>0</td>
 </tr>
@@ -848,7 +848,7 @@ Arm(name='2_4', parameters={'x1': 4.792025636742253, 'x2': 2.4861463640237416})
 <th>3</th>
 <td>0_3</td>
 <td>booth</td>
-<td>17.155994</td>
+<td>691.274307</td>
 <td>0.0</td>
 <td>0</td>
 </tr>
@@ -856,7 +856,7 @@ Arm(name='2_4', parameters={'x1': 4.792025636742253, 'x2': 2.4861463640237416})
 <th>4</th>
 <td>0_4</td>
 <td>booth</td>
-<td>987.490043</td>
+<td>27.855976</td>
 <td>0.0</td>
 <td>0</td>
 </tr>
@@ -864,7 +864,7 @@ Arm(name='2_4', parameters={'x1': 4.792025636742253, 'x2': 2.4861463640237416})
 <th>5</th>
 <td>2_0</td>
 <td>booth</td>
-<td>17.747598</td>
+<td>47.451515</td>
 <td>0.0</td>
 <td>2</td>
 </tr>
@@ -872,7 +872,7 @@ Arm(name='2_4', parameters={'x1': 4.792025636742253, 'x2': 2.4861463640237416})
 <th>6</th>
 <td>2_1</td>
 <td>booth</td>
-<td>70.744910</td>
+<td>44.915287</td>
 <td>0.0</td>
 <td>2</td>
 </tr>
@@ -880,7 +880,7 @@ Arm(name='2_4', parameters={'x1': 4.792025636742253, 'x2': 2.4861463640237416})
 <th>7</th>
 <td>2_2</td>
 <td>booth</td>
-<td>44.934073</td>
+<td>234.000000</td>
 <td>0.0</td>
 <td>2</td>
 </tr>
@@ -888,7 +888,7 @@ Arm(name='2_4', parameters={'x1': 4.792025636742253, 'x2': 2.4861463640237416})
 <th>8</th>
 <td>2_3</td>
 <td>booth</td>
-<td>11.332608</td>
+<td>13.542475</td>
 <td>0.0</td>
 <td>2</td>
 </tr>
@@ -896,7 +896,7 @@ Arm(name='2_4', parameters={'x1': 4.792025636742253, 'x2': 2.4861463640237416})
 <th>9</th>
 <td>2_4</td>
 <td>booth</td>
-<td>57.629151</td>
+<td>16.255879</td>
 <td>0.0</td>
 <td>2</td>
 </tr>
@@ -1144,4 +1144,4 @@ Arm(name='2_4', parameters={'x1': 4.792025636742253, 'x2': 2.4861463640237416})
 </div>
 </div>
 </div>
-</div></div><div class="tutorialButtonWrapper buttonWrapper"><a class="tutorialButton button" download="" href="/versions/latest/files/building_blocks.ipynb" target="_blank"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-download" class="svg-inline--fa fa-file-download fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm76.45 211.36l-96.42 95.7c-6.65 6.61-17.39 6.61-24.04 0l-96.42-95.7C73.42 337.29 80.54 320 94.82 320H160v-80c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v80h65.18c14.28 0 21.4 17.29 11.27 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"></path></svg>Download Tutorial Jupyter Notebook</a></div><div class="tutorialButtonWrapper buttonWrapper"><a class="tutorialButton button" download="" href="/versions/latest/files//building_blocks.py" target="_blank"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-download" class="svg-inline--fa fa-file-download fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm76.45 211.36l-96.42 95.7c-6.65 6.61-17.39 6.61-24.04 0l-96.42-95.7C73.42 337.29 80.54 320 94.82 320H160v-80c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v80h65.18c14.28 0 21.4 17.29 11.27 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"></path></svg>Download Tutorial Source Code</a></div><div class="tutorialRuntime"><p>Total runtime of script: 5.37 seconds.</p></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><div class="footerSection"><h5>Legal</h5><a href="https://opensource.facebook.com/legal/privacy/" target="_blank" rel="noreferrer noopener">Privacy</a><a href="https://opensource.facebook.com/legal/terms/" target="_blank" rel="noreferrer noopener">Terms</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/versions/latest/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2020 Facebook Inc.</section></footer></div></body></html>
+</div></div><div class="tutorialButtonWrapper buttonWrapper"><a class="tutorialButton button" download="" href="/versions/latest/files/building_blocks.ipynb" target="_blank"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-download" class="svg-inline--fa fa-file-download fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm76.45 211.36l-96.42 95.7c-6.65 6.61-17.39 6.61-24.04 0l-96.42-95.7C73.42 337.29 80.54 320 94.82 320H160v-80c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v80h65.18c14.28 0 21.4 17.29 11.27 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"></path></svg>Download Tutorial Jupyter Notebook</a></div><div class="tutorialButtonWrapper buttonWrapper"><a class="tutorialButton button" download="" href="/versions/latest/files//building_blocks.py" target="_blank"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file-download" class="svg-inline--fa fa-file-download fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm76.45 211.36l-96.42 95.7c-6.65 6.61-17.39 6.61-24.04 0l-96.42-95.7C73.42 337.29 80.54 320 94.82 320H160v-80c0-8.84 7.16-16 16-16h32c8.84 0 16 7.16 16 16v80h65.18c14.28 0 21.4 17.29 11.27 27.36zM377 105L279.1 7c-4.5-4.5-10.6-7-17-7H256v128h128v-6.1c0-6.3-2.5-12.4-7-16.9z"></path></svg>Download Tutorial Source Code</a></div><div class="tutorialRuntime"><p>Total runtime of script: 5.05 seconds.</p></div></div></div></div><footer class="nav-footer" id="footer"><section class="sitemap"><div class="footerSection"><h5>Legal</h5><a href="https://opensource.facebook.com/legal/privacy/" target="_blank" rel="noreferrer noopener">Privacy</a><a href="https://opensource.facebook.com/legal/terms/" target="_blank" rel="noreferrer noopener">Terms</a></div></section><a href="https://code.facebook.com/projects/" target="_blank" rel="noreferrer noopener" class="fbOpenSource"><img src="/versions/latest/img/oss_logo.png" alt="Facebook Open Source" width="170" height="45"/></a><section class="copyright">Copyright © 2020 Facebook Inc.</section></footer></div></body></html>
