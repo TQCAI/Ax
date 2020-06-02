@@ -71,7 +71,11 @@ src="/js/documentation_options.js">
 <span class="sd">    Useful to distinguish data failure reasons in automated analyses.</span>
 <span class="sd">    """</span>
 
-    <span class="k">pass</span></div>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">hint</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">""</span><span class="p">,</span> <span class="n">exposures_unavailable</span><span class="p">:</span> <span class="nb">bool</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="n">message</span><span class="o">=</span><span class="n">message</span><span class="p">,</span> <span class="n">hint</span><span class="o">=</span><span class="n">hint</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">exposures_unavailable</span> <span class="o">=</span> <span class="n">exposures_unavailable</span></div>
 
 
 <div class="viewcode-block" id="NoDataError"><a class="viewcode-back" href="../../../exceptions.html#ax.exceptions.core.NoDataError">[docs]</a><span class="k">class</span> <span class="nc">NoDataError</span><span class="p">(</span><span class="n">AxError</span><span class="p">):</span>
